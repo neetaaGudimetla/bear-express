@@ -37,7 +37,7 @@ app.get("/myproducts", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got My Products data ++++ successfully',
+            message: 'Got My Products data ++++ --- successfully',
         });
     } catch (error) {
         console.error(error);
