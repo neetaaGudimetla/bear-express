@@ -26,7 +26,7 @@ app.get("/api/product", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got data successfully',
+            message: 'Got data 123 successfully',
         });
     } catch (error) {
         console.error(error);
