@@ -8,13 +8,25 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-//app.use("/api/product", product);
+//app.use("/", product);
+//---------------------------------------------------------
 
-app.get("/products", async (req, res) => {
+app.get("/", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got Productssss Data successfully',
+            message: 'Got data successfully',
+        });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send("Server error");
+    }
+});
+app.get("/api/product", async (req, res) => {
+    try {
+        res.json({
+            status: 200,
+            message: 'Got data successfully',
         });
     } catch (error) {
         console.error(error);
@@ -25,14 +37,14 @@ app.get("/myproducts", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got MY Productssss Data successfully',
+            message: 'Got My Products data successfully',
         });
     } catch (error) {
         console.error(error);
         return res.status(500).send("Server error");
     }
 });
-
+//---------------------------------------------------------
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 /* npm start
