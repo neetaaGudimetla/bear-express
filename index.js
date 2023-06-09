@@ -15,7 +15,7 @@ app.get("/", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got data successfully',
+            message: 'Got data ++++++ successfully',
         });
     } catch (error) {
         console.error(error);
@@ -26,7 +26,7 @@ app.get("/api/product", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got data 123 successfully',
+            message: 'Got data 123 +++++ successfully',
         });
     } catch (error) {
         console.error(error);
@@ -37,7 +37,7 @@ app.get("/myproducts", async (req, res) => {
     try {
         res.json({
             status: 200,
-            message: 'Got My Products data successfully',
+            message: 'Got My Products data ++++ successfully',
         });
     } catch (error) {
         console.error(error);
