@@ -1,0 +1,27 @@
+{
+  "name": "bear-express",
+  "version": "1.0.0",
+  "description": "Deploy express app to vercel",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neetaaGudimetla/bear-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neetaaGudimetla/bear-express/issues"
+  },
+  "homepage": "https://github.com/neetaaGudimetla/bear-express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
