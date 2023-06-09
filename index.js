@@ -14,6 +14,17 @@ app.get("/products", async (req, res) => {
         return res.status(500).send("Server error");
     }
 });
+app.get("/myproducts", async (req, res) => {
+    try {
+        res.json({
+            status: 200,
+            message: 'Got MY Productssss Data successfully',
+        });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send("Server error");
+    }
+});
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 /* npm start
