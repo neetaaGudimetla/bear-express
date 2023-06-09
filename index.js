@@ -1,14 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const product = require('./api/product');
+//const product = require('./api/product');
 const app = express();
 const PORT = process.env.PORT || 5050;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/api/product", product);
+//app.use("/api/product", product);
+
 app.get("/products", async (req, res) => {
     try {
         res.json({
@@ -31,6 +32,7 @@ app.get("/myproducts", async (req, res) => {
         return res.status(500).send("Server error");
     }
 });
+
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 /* npm start
